@@ -1,18 +1,28 @@
-  *{
-    font-family: sans-serif;
-    box-sizing: border-box;
-  }
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
 
-  body {
-      background-color: #f6f8fc;
-  }
+h1{
+  color: #fff;
+}
 
-  @media screen and(min-width: 992px) {
+body {
+  background-color: #18122B;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: black;
+}
+
+@media screen and (min-width: 992px) {
   .content {
-      width: 100vw;
-      height: 100vh;
-      padding: 1rem;
-      background-color: #FFF;
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
   }
-
-  }
+}
