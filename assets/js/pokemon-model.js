@@ -3,5 +3,7 @@
     name;
     type;
     types = [];
-    photo
+    photo;  
+    ability;
+    abilities = [];  
   }
