@@ -1,21 +1,130 @@
+
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  transition: .30s;  
+  
+  
 }
 
-h1{
-  color: #fff;
+body.dark {
+  background: #292c35;
 }
-
-body {
-  background-color: #18122B;
-}
-
 .content {
   width: 100vw;
   height: 100vh;
-  padding: 1rem;
-  background-color: black;
+  padding: 1rem; 
+   
+}
+
+hr {
+  margin: 0;
+}
+
+.rodapé {
+  padding: 1em;
+}
+
+.lista-rodapé {
+  display: none;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  
+}
+
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  height: 22px;
+  width: 26.1px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 3px;
+  position: relative;
+  height: 31px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  
+  
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+@media screen and (min-width: 1024px){
+
+  .rodapé{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .lista-rodapé {
+      display: block;
+  }
+
+  .lista-rodapé__item{
+      display: flex;
+      align-items: center;
+      margin: 0.6em 0;
+  }
+
+  .lista-rodapé__link {
+      color: var(--cinza);
+      text-decoration: none;
+      margin: 0.6em;
+  }
+
+
+
+  .rodapé__titulo {
+      font-size: 24px;
+  }
+
+}
+
+@media  screen and (min-width: 1728px){ 
+
+  .lista-rodapé {
+      padding-left: 1em;
+  }
+
+  .rodapé {
+      padding: 3em 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -24,5 +133,7 @@ body {
       height: auto;
       margin: 1rem auto;
       border-radius: 1rem;
+      
+      
   }
 }
