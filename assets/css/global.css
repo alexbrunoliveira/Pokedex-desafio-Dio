@@ -17,7 +17,29 @@ body.dark {
   padding: 1rem; 
    
 }
-
+header{
+    background-color: #101026;
+    height: 120px;
+    
+}
+header img{
+ 
+  width: 120px;
+  height: 100px;
+  justify-items: start;
+}
+.botao{
+  margin: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar{
+  display: flex;
+  height: 150px;
+  width: 120px;
+  justify-content: flex-end;
+  margin: 0;
+}
 hr {
   margin: 0;
 }
@@ -32,14 +54,14 @@ hr {
 
 .checkbox {
   opacity: 0;
-  position: absolute;
+  position: relative;
   
 }
 
 
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
-  
+ 
 }
 
 .label .ball {
@@ -47,11 +69,11 @@ hr {
   border-radius: 50%;
   position: absolute;
   top: 6px;
-  left: 2px;
+  left: 1px;
   height: 22px;
-  width: 26.1px;
+  width: 26.0px;
   transform: translateX(0px);
-  transition: transform 0.2s linear;
+  transition: transform 0.3s linear;
 }
 
 .label {
@@ -64,8 +86,8 @@ hr {
   margin-bottom: 5px;
   padding: 3px;
   position: relative;
-  height: 31px;
-  width: 50px;
+  height: 32px;
+  width: 52px;
   transform: scale(1.5);
 }
 
